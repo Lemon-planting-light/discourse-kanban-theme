@@ -2,7 +2,7 @@ display_categories:
   type: list
   default: ""
   description:
-    en: A list of categories where the "Board" button should appear. If left blank, it will be shown everywhere. Use @ to denote the top level view.
+    en: A list of categories where the "Board" button should appear. If left blank, it will be shown everywhere. 已被魔改，请使用类别在url中的名字，例如：91-category
 default_modes:
   type: list
   default: ""
