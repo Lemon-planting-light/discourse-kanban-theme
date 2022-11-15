@@ -13,6 +13,7 @@ const categorySetting = (type, slug, allowTopRoutes = true) => {
 
 const displayConnector = (categorySlug) => {
   console.log("AAAAAWWWWWWWW this is slug");
+  categorySlug = window.location.href.split("/")[4];
   console.log(categorySlug);
   return (
     settings.display_categories === "" ||
