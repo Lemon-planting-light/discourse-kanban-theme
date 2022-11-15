@@ -3,16 +3,16 @@ const categorySetting = (type, slug, allowTopRoutes = true) => {
     return false;
   }
   const categories = settings[type].split("|");
-  console.log("CATE：");
-  console.log(categories);
+  // console.log("CATE：");
+  // console.log(categories);
   const lookup = slug || "@";
-  console.log("SLUG:");
-  console.log(slug);
+  // console.log("SLUG:");
+  // console.log(slug);
   return categories.includes(lookup);
 };
 
 const displayConnector = (categorySlug) => {
-  console.log("AAAAAWWWWWWWW this is slug");
+  console.log("My Location:");
   categorySlug = window.location.href.split("/")[4];
   console.log(categorySlug);
   return (
