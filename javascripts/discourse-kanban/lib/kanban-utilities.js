@@ -5,7 +5,8 @@ const categorySetting = (type, slug, allowTopRoutes = true) => {
   const categories = settings[type].split("|");
   console.log("CATE：");
   console.log(categories);
-  const lookup = slug || "@";
+  // const lookup = slug || "@";
+  const lookup = "Admins" || "@";
   console.log("SLUG:");
   console.log(slug);
   return categories.includes(lookup);
