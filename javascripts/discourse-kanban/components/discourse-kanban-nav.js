@@ -6,7 +6,7 @@ import DiscourseURL from "discourse/lib/url";
 export default Component.extend({
   tagName: "a",
   attributeBindings: "href",
-  classNameBindings: "inactive",
+  classNameBindings: "active",
   kanbanHelper: service(),
 
   @discourseComputed("category")
