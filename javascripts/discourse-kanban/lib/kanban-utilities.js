@@ -5,16 +5,15 @@ const categorySetting = (type, slug, allowTopRoutes = true) => {
   const categories = settings[type].split("|");
   console.log("CATE：");
   console.log(categories);
-  // const lookup = slug || "@";
-  const lookup = "Admins" || "@";
+  const lookup = slug || "@";
   console.log("SLUG:");
   console.log(slug);
   return categories.includes(lookup);
 };
 
 const displayConnector = (categorySlug) => {
-  console.log("AAAAAWWWWWWWW");
-  console.log(categorySetting("display_categories", categorySlug));
+  console.log("AAAAAWWWWWWWW this is slug");
+  console.log(categorySlug);
   return (
     settings.display_categories === "" ||
     categorySetting("display_categories", categorySlug)
