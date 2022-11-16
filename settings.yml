@@ -2,17 +2,17 @@ display_categories:
   type: list
   default: ""
   description:
-    en: A list of categories where the "Board" button should appear. If left blank, it will be shown everywhere. 已被魔改，请使用类别在url中的名字，例如：91-category
+    en: A list of categories where the "Board" button should appear. If left blank, it will be shown everywhere. 已被魔改，请使用类别在url中的名字，例如：91-category. 类别名称必须大于一个字符，且不能为纯数字。
 default_modes:
   type: list
   default: ""
   description:
-    en: "Override the default board mode for each category. Use the syntax `category:mode:params`. For example, `support:assigned:david,sam,joffrey`. Use @ to denote the top level view. Use @untagged to display an untagged column."
+    en: "Override the default board mode for each category. Use the syntax `category:mode_string`. For example, `91-category:categories%3A25%2C26`. 已被魔改，请务必保证只有一个冒号，且类别名之后的内容直接从url中复制过来。"
 default_view:
   type: list
   default: ""
   description:
-    en: A list of categories where the "Board" is the default view. Does not yet support the top level default view.
+    en: A list of categories where the "Board" is the default view. Does not yet support the top level default view. 这个设置项目前是没用的。
 require_confirmation:
   default: true
   description:

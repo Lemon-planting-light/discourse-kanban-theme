@@ -11,10 +11,16 @@ const categorySetting = (type, slug, allowTopRoutes = true) => {
   return categories.includes(lookup);
 };
 
+const getCurrentCategoryUrl = () => {
+  let categorySlug = window.location.href.split("/")[4];
+  const subcate = window.location.href.split("/")[5];
+  if (typeof(subcate) == 'string')
+    if (isNaN(Number(subcate)) && subcate.length != 1)
+      categorySlug = subcate;
+  return categorySlug;
+}
+
 const displayConnector = (categorySlug) => {
-  console.log("My Location:");
-  categorySlug = window.location.href.split("/")[4];
-  console.log(categorySlug);
   return (
     settings.display_categories === "" ||
     categorySetting("display_categories", categorySlug)
@@ -29,4 +35,4 @@ const isDefaultView = (transition) => {
   return transition.to.name === "discovery.category";
 };
 
-export { displayConnector, boardDefaultView, isDefaultView };
+export { displayConnector, boardDefaultView, isDefaultView, getCurrentCategoryUrl };
