@@ -17,6 +17,7 @@ const getCurrentCategoryUrl = () => {
   if (typeof(subcate) == 'string')
     if (isNaN(Number(subcate)) && subcate.length != 1)
       categorySlug = subcate;
+  if (categorySlug == undefined) categorySlug = '@';
   return categorySlug;
 }
 

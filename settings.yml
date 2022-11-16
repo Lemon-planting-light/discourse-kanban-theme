@@ -2,14 +2,14 @@ display_categories:
   type: list
   default: ""
   description:
-    en: A list of categories where the "Board" button should appear. If left blank, it will be shown everywhere. Please use the name in the URL, for example, `91-category`. Category name must be greater than one character and cannot be a pure number.
-    zh_CN: "“看板”按钮会出现的类别列表。留空的话，它将在所有地方出现。请使用类别在url中的名字，例如：91-category. 类别名称必须大于一个字符，且不能为纯数字。"
+    en: A list of categories where the "Board" button should appear. If left blank, it will be shown everywhere. Please use the name in the URL, for example, `91-category`. Category name must be greater than one character and cannot be a pure number. Use @ to denote the top level view.
+    zh_CN: "“看板”按钮会出现的类别列表。留空的话，它将在所有地方出现。请使用类别在url中的名字，例如：91-category. 类别名称必须大于一个字符，且不能为纯数字。使用@作为顶级视图。"
 default_modes:
   type: list
   default: ""
   description:
-    en: "Override the default board mode for each category. Use the syntax `category:mode_string_in_URL`. For example, `91-category:categories%3A25%2C26`. Due to the implementation problem of the original author, please ensure that there is only one colon, and the content after the class alias is directly copied from the URL."
-    zh_CN: "对某些类别，修改看板按钮的默认呈现方式。格式为：`类别:URL里的模式字符串`，例如：`91-category:categories%3A25%2C26`。由于原作者实现问题，请务必保证只有一个冒号，且类别名之后的内容直接从URL中复制过来。"
+    en: "Override the default board mode for each category. Use the syntax `category:mode_string_in_URL`. For example, `91-category:categories%3A25%2C26`. Due to the implementation problem of the original author, please ensure that there is only one colon, and the content after the class alias is directly copied from the URL. Use @ to denote the top level view."
+    zh_CN: "对某些类别，修改看板按钮的默认呈现方式。格式为：`类别:URL里的模式字符串`，例如：`91-category:categories%3A25%2C26`。由于原作者实现问题，请务必保证只有一个冒号，且类别名之后的内容直接从URL中复制过来。使用@作为顶级视图。"
 default_view:
   type: list
   default: ""
