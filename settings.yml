@@ -2,29 +2,35 @@ display_categories:
   type: list
   default: ""
   description:
-    en: A list of categories where the "Board" button should appear. If left blank, it will be shown everywhere. 已被魔改，请使用类别在url中的名字，例如：91-category. 类别名称必须大于一个字符，且不能为纯数字。
+    en: "A list of categories where the "Board" button should appear. If left blank, it will be shown everywhere. Please use the name in the URL, for example, `91-category`. Category name must be greater than one character and cannot be a pure number."
+    zh_CN: “看板”按钮会出现的类别列表。留空的话，它将在所有地方出现。请使用类别在url中的名字，例如：91-category. 类别名称必须大于一个字符，且不能为纯数字。
 default_modes:
   type: list
   default: ""
   description:
-    en: "Override the default board mode for each category. Use the syntax `category:mode_string`. For example, `91-category:categories%3A25%2C26`. 已被魔改，请务必保证只有一个冒号，且类别名之后的内容直接从url中复制过来。"
+    en: "Override the default board mode for each category. Use the syntax `category:mode_string_in_URL`. For example, `91-category:categories%3A25%2C26`. Due to the implementation problem of the original author, please ensure that there is only one colon, and the content after the class alias is directly copied from the URL."
+    zh-CN: "对某些类别，修改看板按钮的默认呈现方式。格式为：`类别:URL里的模式字符串`，例如：`91-category:categories%3A25%2C26`。由于原作者实现问题，请务必保证只有一个冒号，且类别名之后的内容直接从URL中复制过来。"
 default_view:
   type: list
   default: ""
   description:
-    en: A list of categories where the "Board" is the default view. Does not yet support the top level default view. 这个设置项目前是没用的。
+    en: A list of categories where the "Board" is the default view. Does not yet support the top level default view. 
+    zh-CN: A list of categories where the "Board" is the default view. Does not yet support the top level default view. 这个设置项目前是没用的。
 require_confirmation:
   default: true
   description:
     en: Display a confirmation modal before making changes to a topic's tags/category?
+    zh-CN: 在对话题的标签/类别做出更改时，是否显示确认对话框
 show_tags:
   default: false
   description:
     en: Show tags on topic cards?
+    zh-CN: 在看板卡片上显示话题的标签。
 num_columns:
   default: 3
   description:
     en: Number of columns to display on screen. More are available by scrolling
+    zh-CN: 屏幕上能容纳多少列看板。（更多的列可以通过滑动给出）。
 extra_icons:
   default: "user-minus"
   description:
