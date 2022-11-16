@@ -161,12 +161,6 @@
 
       box-shadow: 0 1px 0 var(--primary-medium, $primary-medium);
 
-      :hover {
-        background-color: var(--primary-low);
-      }
-      :active {
-        background-color: var(--danger-low-mid);
-      }
       &.dragging {
         background-color: var(--tertiary-low, $tertiary-low);
       }
@@ -224,4 +218,11 @@
   div.ac-wrap {
     width: 100%;
   }
+}
+
+.discourse-kanban-container .discourse-kanban-list .topic-card:hover {
+  background-color: var(--primary-low);
+}
+.discourse-kanban-container .discourse-kanban-list .topic-card:active {
+  background-color: var(--danger-low-mid);
 }
