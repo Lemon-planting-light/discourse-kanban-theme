@@ -29,6 +29,7 @@ const displayConnector = (categorySlug) => {
 };
 
 const boardDefaultView = (categorySlug) => {
+  categorySlug = getCurrentCategoryUrl();
   return categorySetting("default_view", categorySlug, false);
 };
 
