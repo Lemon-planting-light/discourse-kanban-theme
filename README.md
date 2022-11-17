@@ -11,6 +11,7 @@ To learn more, check out: https://meta.discourse.org/t/kanban-board-theme-compon
 - Fixed the bug that the first three settings are invalid
 - Added slider to manually adjust kanban height
 - Kanban height is now adaptive
+- Made some gradients for boards; boards don't flicker now when cards are dragged
 
 ## 修改内容：
 
@@ -19,3 +20,4 @@ To learn more, check out: https://meta.discourse.org/t/kanban-board-theme-compon
 - 修复了“前三个设置无效”的bug
 - 增加了手动调节看板高度的滑块
 - 看板的高度现在可以自适应
+- 为看板制作了一些渐变；现在拖动卡片时，看板不会闪烁
