@@ -50,7 +50,7 @@
     background-color: gray;
     border-radius: 100px;
   }
-  
+
   &:after {
     display: none;
     content: "";
@@ -177,6 +177,10 @@
 
         .posters,
         .topic-title {
+          &.visited {
+            color: var(--primary-medium);
+          }
+          color: var(--primary);
           flex-grow: 1;
           word-wrap: break-word;
           overflow: hidden;
