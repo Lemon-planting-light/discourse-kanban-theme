@@ -1,9 +1,9 @@
 <div class="card-row">
   {{topic-status topic=topic}}
   {{#if topic.visited}}
-    <a class="topic-title visited">{{topic.title}}</a>
+    <a class="topic-title visited" href="{{topic.lastUnreadUrl}}">{{topic.title}}</a>
   {{else}}
-    <a class="topic-title">{{topic.title}}</a>
+    <a class="topic-title" href="{{topic.lastUnreadUrl}}">{{topic.title}}</a>
   {{/if}}
   {{format-date topic.bumpedAt format="tiny" noTitle="true"}}
 </div>
